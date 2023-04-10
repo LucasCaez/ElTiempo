@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  user-select: none;
 }
 
 body {
@@ -11,7 +12,8 @@ body {
   align-items: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
-  height: 760px;
+  height: 700px;
+  
 
 }
 
@@ -65,6 +67,7 @@ body {
 .buscador button {
   border: 0;
   background-color: rgb(49, 49, 49);
+  
   color: #ffffff;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -75,11 +78,25 @@ body {
   cursor: pointer;
   transform: translateX(-39px);
 }
-.buscador input:focus {
-
-}
 
 .img {
   transform: translateX(120px) translateY(80px);
   height: 60px;
+}
+.Footer {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(158, 158, 158);
+}
+
+.Footer img {
+  padding: 20px;
+}
+
+.Footer a{
+font-size: 12px;
+color: rgb(158, 158, 158);
+text-decoration: none;
 }
