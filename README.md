@@ -6,3 +6,4 @@ Es una web que te dice la información del tiempo en un sitio en concreto. Puede
 
 
 
+Todos los derechos reservados a Luc4s.dev
