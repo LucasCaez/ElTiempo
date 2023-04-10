@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { getApiInfo } from './componentes/getApiInfo';
 import { Home } from './componentes/Home';
 import { Buscador } from './componentes/Buscador';
+import { Footer } from './componentes/footer';
 
 function App() {
 
@@ -32,24 +33,24 @@ function App() {
   }, [city])
 
   const sumit = (e) => {
-console.log(e)
-
-
     e.preventDefault()
     setCity(e.target[0].value)
     e.target.reset()
-
   }
 
   return (
+<>
+<Footer />
+    
     <div className='App' >
       <div>
-
+        
         <Home data={data} />
         <Buscador sumit={sumit} />
 
       </div>
     </div>
+    </>
   );
 }
 
