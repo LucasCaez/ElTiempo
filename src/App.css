@@ -96,6 +96,9 @@ body {
   transition: all linear .3s;
   cursor: crosshair;
   padding: 20px;
+  animation-name: trs;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
 }
 
 .Footer img:hover {
@@ -112,3 +115,12 @@ font-size: 12px;
 color: rgb(158, 158, 158);
 text-decoration: none;
 }
+
+
+@keyframes trs {
+  0% {transform: rotateZ(0deg);}
+  80% {transform: rotateZ(360deg);}
+  100% {transform: rotateZ(0deg);}
+
+}
+
