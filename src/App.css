@@ -57,11 +57,11 @@ body {
   padding-bottom: 15px;
   padding-left: 20px;
   padding-right: 95px;
-  width: 400px;
+  width: 350px;
   border-radius: 10px;
   background-color: #fff;
   box-sizing: border-box;
-  transform: translate(40px);
+  transform: translate(30px);
   outline: none;
 }
 .buscador button {
@@ -76,13 +76,14 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   cursor: pointer;
-  transform: translateX(-39px);
+  transform: translateX(-51px);
 }
 
 .img {
   transform: translateX(120px) translateY(80px);
   height: 60px;
 }
+
 .Footer {
   position: fixed;
   display: flex;
@@ -92,7 +93,14 @@ body {
 }
 
 .Footer img {
+  transition: all linear .3s;
+  cursor: crosshair;
   padding: 20px;
+}
+
+.Footer img:hover {
+  transition: all linear .3s;
+  transform: rotateZ(80deg);
 }
 
 .Footer h1 {
